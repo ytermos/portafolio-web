@@ -1,0 +1,32 @@
+{
+  "name": "portafolio-web",
+  "description": "Plantilla de portafolio para la asignatura de Apps y Arte Multimedia",
+  "author": "Yago Terrer Moscardó",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.71.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.5.2",
+    "reka-ui": "^2.11.0",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.44",
+    "vue-router": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/tsconfig": "^0.9.1",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.6",
+    "vue-tsc": "^3.3.14"
+  }
+}
