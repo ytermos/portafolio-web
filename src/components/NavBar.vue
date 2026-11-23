@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { Toggle } from '@/components/ui/toggle';
 import { Circle, Minus } from 'lucide-vue-next';
+
 
 
 interface MenuItems {
@@ -45,11 +45,12 @@ const handleNavigate = (href: string, customClick?: () => void) => {
   ></div>
 
   
-  <div class="fixed top-4 left-4 right-4 z-50 flex flex-col sm:flex-row sm:items-center">
+  <div class=" nav-shadow fixed top-4 left-4 right-4 z-50 flex flex-col sm:flex-row sm:items-center pointer-events-none text-white">
     
     
-    <Toggle 
-  class="w-14 h-14 rounded-full flex items-center justify-center p-0 hover:bg-gray-100 transition-all duration-300"
+    <button
+  type="button"
+  class="mt-5 ml-5 w-20 h-20 rounded-full flex items-center justify-center p-0 bg-transparent cursor-pointer pointer-events-auto focus:outline-none transition-all duration-300 hover:scale-105 hover:text-orange-100"
   @click="toggleMenu"
 >
   <Transition name="icon-switch" mode="out-in">
@@ -58,24 +59,24 @@ const handleNavigate = (href: string, customClick?: () => void) => {
       <Minus class="size-full sm:rotate-90 transition-transform duration-300" />
     </span>
   </Transition>
-</Toggle>
+</button>
 
     
     <Transition name="slide-menu" :duration="{ enter: 1500, leave: 400 }">
       <nav 
         v-if="isOpen"
-        class="relative flex flex-col sm:flex-row  w-fit sm:ml-auto sm:pl-40 mt-2 sm:mt-0 bg-white"
+        class="relative flex flex-col sm:flex-row  w-fit sm:ml-auto sm:pl-40 mt-2 sm:mt-0 pointer-events-auto"
       >
         <a
           v-for="item in items"
           :key="item.label"
           :href="item.href"
           @click.prevent="handleNavigate(item.href, item.onClick)"
-          class="px-4 py-3 hover:text-gray-500 transition-colors"
+          class="px-4 py-3 hover:text-orange-100 transition-colors duration-300"
         >
           {{ item.label }}
         </a>
-        <span class="menu-line absolute bg-gray-800 top-0 right-0 w-[3px] h-full sm:top-auto sm:bottom-0 sm:left-0 sm:w-full sm:h-[3px] "></span>
+        <span class="menu-line absolute bg-white top-0 right-0 w-[3px] h-full sm:top-auto sm:bottom-0 sm:left-0 sm:w-full sm:h-[3px] "></span>
 
       </nav>
     </Transition>
@@ -85,6 +86,10 @@ const handleNavigate = (href: string, customClick?: () => void) => {
 
 
 <style scoped>
+.nav-shadow {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+
 .slide-menu-enter-active,
 .slide-menu-leave-active {
   transition: transform 0.4s ease, opacity 0.4s ease;
