@@ -17,9 +17,9 @@ const menuItems = [
 <template>
   <div >
     <div class="velo-blanco fixed inset-0 z-40 bg-pink-800/15 pointer-events-none"></div>
-      <div class="entrada-navbar relative z-50">
+      <header class="entrada-navbar relative z-50">
         <NavBar :items="menuItems" />
-      </div>
+      </header>
 
       <section id="home" class="relative min-h-screen">
         <div class="fondo-portada absolute top-0 inset-x-0 pointer-events-none">
@@ -47,7 +47,7 @@ const menuItems = [
               </h1>
 
               <p class="entrada-3 mt-4 sm:mt-6 font-semibold text-sm sm:text-base md:text-lg  tracking-[0.2em] pl-[0.2em] text-stone-900/80">
-              ILLUSTRATION ·3D ANIMATION · MOTION GRAPHICS · GRAPHIC & WEB DESIGN
+              ILLUSTRATION · 3D ANIMATION · MOTION GRAPHICS · GRAPHIC & WEB DESIGN
               </p>
             </div>
 
