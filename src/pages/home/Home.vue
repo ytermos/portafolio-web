@@ -16,7 +16,7 @@ const menuItems = [
 
 <template>
   <div >
-    <div class="velo-blanco fixed inset-0 z-40 bg-pink-800/7 pointer-events-none"></div>
+    <div class="velo-blanco fixed inset-0 z-40 bg-pink-800/15 pointer-events-none"></div>
       <div class="entrada-navbar relative z-50">
         <NavBar :items="menuItems" />
       </div>
@@ -47,7 +47,7 @@ const menuItems = [
               </h1>
 
               <p class="entrada-3 mt-4 sm:mt-6 font-semibold text-sm sm:text-base md:text-lg  tracking-[0.2em] pl-[0.2em] text-stone-900/80">
-              DIGITAL ILUSTRATION · 3D ANIMATION · WEB DESIGN
+              ILLUSTRATION ·3D ANIMATION · MOTION GRAPHICS · GRAPHIC & WEB DESIGN
               </p>
             </div>
 
