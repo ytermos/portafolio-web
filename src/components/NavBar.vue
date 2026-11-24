@@ -50,7 +50,7 @@ const handleNavigate = (href: string, customClick?: () => void) => {
     
     <button
   type="button"
-  class="mt-5 ml-5 w-20 h-20 rounded-full flex items-center justify-center p-0 bg-transparent cursor-pointer pointer-events-auto focus:outline-none transition-all duration-300 hover:scale-105 hover:text-orange-100"
+  class="mt-5 ml-5 w-16 h-16 rounded-full flex items-center justify-center p-0 bg-transparent cursor-pointer pointer-events-auto focus:outline-none transition-all duration-300 hover:scale-105 hover:text-orange-100"
   @click="toggleMenu"
 >
   <Transition name="icon-switch" mode="out-in">
