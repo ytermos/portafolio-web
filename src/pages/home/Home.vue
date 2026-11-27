@@ -57,7 +57,7 @@ const menuItems = [
         </div>
       </section>
 
-      <section id="gallery" class="min-h-screen mt-39 pt-48">
+      <section id="gallery" class="min-h-screen mt-39 ">
         <div class=" relative z-10"> 
           <Gallery/>
         </div>
